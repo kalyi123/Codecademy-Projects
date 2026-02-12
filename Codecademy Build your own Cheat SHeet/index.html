@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build your own Cheat Sheet</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#cssCheatSheet">CSS Cheat Sheet</a></li>
+                <li><a href="#htmlCheatSheet">HTML Cheat Sheet</a></li>
+                <li><a href="#jscriptCheatSheet">JavaScript Cheat Sheet</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <h1 id="cssCheatSheet">CSS Cheat Sheet</h1>
+        <h3>Basic Structure</h3>
+        <p>selector { property: value; }</p>
+            <!--Selector Table-->
+            <p>Selector</p>
+            <table>
+                <tr>
+                    <th>Selector</th>
+                    <th>What gets selected?</th>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>all elements</td>
+                </tr>
+                <tr>
+                    <td>div</td>
+                    <td>all divs</td>
+                </tr>
+                <tr>
+                    <td>div.p</td>
+                    <td>all divs and paragraphs</td>
+                </tr>
+                <tr>
+                    <td>div p</td>
+                    <td>paragraphs inside divs</td>
+                </tr>
+                <tr>
+                    <td>div > p</td>
+                    <td>all p tags, one level deep in div</td>
+                </tr>
+                <tr>
+                    <td>div + p</td>
+                    <td>p tags immediately after div</td>
+                </tr>
+                <tr>
+                    <td>div ~ p</td>
+                    <td>p tags preceded by div</td>
+                </tr>
+                <tr>
+                    <td>.classname</td>
+                    <td>all elements with this classname</td>
+                </tr>
+                <tr>
+                    <td>#idname</td>
+                    <td>element with ID</td>
+                </tr>
+                <tr>
+                    <td>div.classname</td>
+                    <td>divs with certain classname</td>
+                </tr>
+                <tr>
+                    <td>div#idname</td>
+                    <td>divs with certain ID</td>
+                </tr>
+                <tr>
+                    <td>#idname *</td>
+                    <td>all elements inside #idname</td>
+                </tr>
+            </table>
+            <!--PseudoClass Table-->
+            <p>Pseudo Class</p>
+            <table>
+                <tr>
+                    <th>Pseudo Class</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>a:link</td>
+                    <td>link in normal state</td>
+                </tr>
+                <tr>
+                    <td>a:active</td>
+                    <td>link in clicked state</td>
+                </tr>  
+                <tr>
+                    <td>a:hover</td>
+                    <td>link with mouse over it</td>
+                </tr>  
+                <tr>
+                    <td>a:visited</td>
+                    <td>visited link</td>
+                </tr>  
+                <tr>
+                    <td>p::after{content:"yo"}</td>
+                    <td>add content after p</td>
+                </tr>  
+                <tr>
+                    <td>p::before</td>
+                    <td>add content before p</td>
+                </tr>  
+                <tr>
+                    <td>input:checked</td>
+                    <td>checked inputs</td>
+                </tr>  
+                <tr>
+                    <td>input:disabled</td>
+                    <td>disabled inputs</td>
+                </tr>  
+                <tr>
+                    <td>input:enabled</td>
+                    <td>enabled inputs</td>
+                </tr>  
+                <tr>
+                    <td>input:focus</td>
+                    <td>input has focus</td>
+                </tr>  
+                <tr>
+                    <td>input:in-range</td>
+                    <td>value in range</td>
+                </tr>  
+                <tr>
+                    <td>input:out-of-range</td>
+                    <td>input value out of range</td>
+                </tr>  
+                <tr>
+                    <td>input:valid</td>
+                    <td>input with valid value</td>
+                </tr> 
+                <tr>
+                    <td>input:invalid</td>
+                    <td>input with invalid value</td>
+                </tr> 
+                <tr>
+                    <td>input:optional</td>
+                    <td>no required attribute</td>
+                </tr> 
+                <tr>
+                    <td>input:required</td>
+                    <td>input with requred attribute</td>
+                </tr> 
+                <tr>
+                    <td>input:read-only</td>
+                    <td>with readonly attribute</td>
+                </tr> 
+                <tr>
+                    <td>input:read-write</td>
+                    <td>no readonly attrib.</td>
+                </tr> 
+                <tr>
+                    <td>div:empty</td>
+                    <td>element with no children</td>
+                </tr> 
+                <tr>
+                    <td>p::first-letter</td>
+                    <td>first letter in p</td>
+                </tr> 
+                <tr>
+                    <td>p::first-line</td>
+                    <td>first line in p</td>
+                </tr> 
+                <tr>
+                    <td>p:first-of-type</td>
+                    <td>first of some type</td>
+                </tr> 
+                <tr>
+                    <td>p:last-of-type</td>
+                    <td>last of some type</td>
+                </tr> 
+                <tr>
+                    <td>p:lang(en)</td>
+                    <td>p with en language attribute</td>
+                </tr> 
+                <tr>
+                    <td>:not(span)</td>
+                    <td>element that's not a span</td>
+                </tr>
+                <tr>
+                    <td>p:first-child</td>
+                    <td>first child of its parent</td>
+                </tr> 
+                <tr>
+                    <td>p:last-child</td>
+                    <td>last child of its parent</td>
+                </tr>
+                <tr>
+                    <td>p:nth-child(2)</td>
+                    <td>second child of its parent</td>
+                </tr> 
+                <tr>
+                    <td>p:nth-child(3n+1)</td>
+                    <td>nth-child (an + b) formula</td>
+                </tr>
+                <tr>
+                    <td>p:nth-last-child(2)</td>
+                    <td>second child from behind</td>
+                </tr> 
+                <tr>
+                    <td>p:nth-of-type(2)</td>
+                    <td>second p of its parent</td>
+                </tr>
+                <tr>
+                    <td>p:nth-last-of-type(2)</td>
+                    <td>...from behind</td>
+                </tr> 
+                <tr>
+                    <td>p:only-of-type</td>
+                    <td>unique of its parent</td>
+                </tr>
+                <tr>
+                    <td>p:only-child</td>
+                    <td>only child of its parent</td>
+                </tr> 
+                <tr>
+                    <td>:root</td>
+                    <td>documents root element</td>
+                </tr>
+                <tr>
+                    <td>::selection</td>
+                    <td>portion selected by user</td>
+                </tr> 
+                <tr>
+                    <td>:target</td>
+                    <td>highlight active anchor</td>
+                </tr>
+            </table>
+            <!--Attribute Selector Table-->
+            <p>Attribute Selector</p>
+            <table>
+                <tr>
+                    <th>Attribute selector</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>a[target]</td>
+                    <td>links with a target attribute</td>
+                </tr>
+                <tr>
+                    <td>a[target="_blank"]</td>
+                    <td>links which open in new tab</td>
+                </tr>
+                <tr>
+                    <td>[title~="chair"]</td>
+                    <td>title element containing a word</td>
+                </tr>
+                <tr>
+                    <td>[class^="chair"]</td>
+                    <td>class starts with chair</td>
+                </tr>
+                <tr>
+                    <td>[class|="chair"]</td>
+                    <td>class starts with the chair word</td>
+                </tr>
+                <tr>
+                    <td>[class*="chair"]</td>
+                    <td>class contains chair</td>
+                </tr>
+                <tr>
+                    <td>[class$="chair"]</td>
+                    <td>class ends with chair</td>
+                </tr>
+                <tr>
+                    <td>input[type="button"]</td>
+                    <td>specified input type</td>
+                </tr>
+            </table>
+        <h1 id="htmlCheatSheet">HTML Cheat Sheet</h1>
+            <!--Tag Table-->
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td class="tagCode">&lt;table&gt;</td>
+                    <td>Table</td>
+                    <td>The &lt;table&gt; element represents tabular data - that is, information presented in a <br>two-dimensional table comprised of rows and columns of cells containing data.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Table Row</td>
+                    <td>The &lt;tr&gt; HTML element defines a row of cells in a table. The row's cells can then <br>be established using a mix of &lt;td&gt; (data cell) and &lt;th&gt; (header cell) elements.</td>
+                </tr>
+                <tr>
+                    <td class="tagCode">a</td>
+                    <td>a</td>
+                    <td>a</td>
+                </tr>
+                <tr>
+                    <td class="tagCode">b</td>
+                    <td>b</td>
+                    <td>b</td>
+                </tr>
+                <tr>
+                    <td class="tagCode">c</td>
+                    <td>c</td>
+                    <td>c</td>
+                </tr>
+                <tr>
+                    <td class="tagCode">d</td>
+                    <td>d</td>
+                    <td>d</td>
+                </tr>
+                
+            </table>
+
+        <h1 id="jscriptCheatSheet">JavaScript Cheat Sheet</h1>
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td class="tagCode">aaa</td>
+                    <td>aaa</td>
+                    <td>aaa</td>
+                </tr>
+                <tr>
+                    <td class="tagCode">aa</td>
+                    <td>aa</td>
+                    <td>aa</td>
+                </tr>
+                <tr>
+                    <td class="tagCode">a</td>
+                    <td>a</td>
+                    <td>a</td>
+                </tr>
+                <tr>
+                    <td class="tagCode">b</td>
+                    <td>b</td>
+                    <td>b</td>
+                </tr>
+                <tr>
+                    <td class="tagCode">c</td>
+                    <td>c</td>
+                    <td>c</td>
+                </tr>
+                <tr>
+                    <td class="tagCode">d</td>
+                    <td>d</td>
+                    <td>d</td>
+                </tr>
+            </table>
+    </main>
+
+
+    <footer>
+        <ul>
+            <li>&copy;2026</li>
+            <li>M.H</li>
+            <li>testitest@test.com</li>
+            <li>Impressumstr 69, 78787 Impressum</li>
+        </ul>
+    </footer>
+
+</body>
+</html>

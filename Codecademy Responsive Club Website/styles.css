@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    background-color: #ffe3e3;
+    font-size: 16px;
+}
+
+nav {
+    width: 100%;
+    background-color: #aa9797;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+
+nav li a{
+    color: #3b3636;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #ffe3e3;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 2rem;
+    margin: 10rem 0;
+    background-color: #554c4c;
+    color: #ffe3e3;
+}
+
+.summary {
+    padding: 0 4rem;
+}
+
+.summary h2 {
+    font-size: 2rem;
+    color: rgb(255, 45, 80);
+}
+
+.summary p {
+    padding: 1rem 0 0.5rem 0;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.gallery img {
+    width: 30%;
+    margin: 1.5%;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #aa9797;
+}
+
+.testimonial h1 {
+    font-size: 2rem;
+}
+
+.testimonial p {
+    padding-top: 0.25rem;
+    color: rgb(66, 66, 66);
+}
+
+.meetup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.meetup h1 {
+    font-size: 2rem;
+    color: rgb(255, 45, 80);
+    padding: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.meetup img {
+    width: 100%;
+    max-width: 68rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .meetup img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .testimonial h1 {
+        text-align: center;
+    }
+}

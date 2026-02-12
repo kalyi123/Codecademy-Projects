@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica", sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: #121212;
+    text-align: center;
+}
+
+header {
+    border-bottom: 1px solid seashell;
+    width: 100%;
+    max-height: 69px;
+    height: 100%;
+    position: fixed;
+    background-color: #121212;
+    z-index: 100;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav .headerLeft {
+    max-height: 50px;
+    height: 100%;    
+}
+
+nav .headerRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .headerRight ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration: underline;
+    gap: 30px;
+}
+
+nav .headerRight ul li a {
+    color: seashell;
+}
+
+.mission {
+    padding-top: 70px;
+}
+
+.missionContainer {
+    display: flex;
+    flex-direction: column;
+    background-image: url(resource/img-mission-background.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.missionContainer h2, .missionContainer h4{
+    background-color: #121212;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.teaOfTheMonth {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.teaOfTheMonth h2 {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+ 
+.teaOfTheMonth h4 {
+    padding-bottom: 20px;
+}
+
+.teaContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.teaItem img {
+    max-height: 200px;
+    max-width: 300px;
+    height: 100%;
+    width: 100%;
+}
+
+.teaItem h4 {
+    padding-top: 10px;
+}
+
+.locations {
+    background-image: url(resource/img-locations-background.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    max-height: 500px;
+    height: 100%;
+    margin-top: 70px;
+}
+
+.locations h2 {
+    position: relative;
+    top: 95px;
+}
+
+.locationsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    gap: 40px;
+}
+
+.locationsAddress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #121212;
+    width: 300px;
+    height: 250px;
+    margin-top: -38px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+}
+
+footer h4 {
+    text-align: left;
+    padding: 0 0 20px 20px;
+}
